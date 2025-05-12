@@ -25,39 +25,16 @@
        <input type="text" name="" class="form-control" v-model="message" placeholder="Enter your name">
        
        <button  @click="showList" :class="toggleClass" >{{show?'Hide List':'Show List'}}</button>
+
+       <input type="text" name="" id="" placeholder="Enter Kilometers" v-model="kilometers" class=" inline"> km  =
+       <input type="text" name="" id="" placeholder="Enter Meter" v-model="meters" class="inline"> m
+
+
+       <h1>My Name is: {{firstName}}  {{lastName}} </h1>
+       <input type="text" name="" id="" v-model="fullName">
     </div>
    </div>
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
-    <script>
-        new Vue ({
-            el:'#app',
-            data() {
-                return {
-                    message:"Hello I am learning Vue.js",
-                    className:"alert alert-danger",
-                    show:false,
-                    
-                    list:[
-                        'Dev',"Sunder","Raman","Srinivasa Rao"
-                    ],
-                    students:[
-                        {name:"Dev", age: 25},
-                        {name:"Sunder", age: 26},
-                        {name:"Raman", age: 27},
-                    ]
-                }
-            },
-            methods: {
-                showList() {
-                    this.show = !this.show;
-                }
-            },
-            computed: {
-    toggleClass() {
-      return this.show ? 'btn btn-danger' : 'btn btn-primary';
-    }
-  },
-        })
-    </script>
+    <script src="./vue-script.js"></script>
 </body>
 </html>
