@@ -2,7 +2,7 @@ new Vue ({
     el:'#app',
     data() {
         return {
-            message:"Hello I am learning Vue.js",
+            message:"Let's learn Vue.js 2.0",
             className:"alert alert-danger",
             show:false,
             
